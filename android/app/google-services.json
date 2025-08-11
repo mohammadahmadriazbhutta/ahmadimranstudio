@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50839688997",
+    "project_id": "ahmadimranclothing",
+    "storage_bucket": "ahmadimranclothing.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50839688997:android:c9186c9a3733c9caa2eccc",
+        "android_client_info": {
+          "package_name": "com.example.ahmadimranclothing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVT5qUOplvgcNO5yB5clpql6iX1gFuXeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
