@@ -142,7 +142,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                                 ),
                                 _InfoChip(
                                   label: 'Price',
-                                  value: '\$${price.toStringAsFixed(2)}',
+                                  value: '\Pkr ${price.toStringAsFixed(2)}',
                                 ),
                               ],
                             ),

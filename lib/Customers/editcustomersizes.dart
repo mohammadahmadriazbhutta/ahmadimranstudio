@@ -6,11 +6,13 @@ import 'package:pdf/widgets.dart' as pw;
 class EditCustomerSizesPage extends StatefulWidget {
   final String customerId;
   final String customerName;
+  final String customerPhone;
 
   const EditCustomerSizesPage({
     super.key,
     required this.customerId,
     required this.customerName,
+    required this.customerPhone,
   });
 
   @override
@@ -56,6 +58,8 @@ class _EditCustomerSizesPageState extends State<EditCustomerSizesPage> {
       "Thigh",
       "Bottom",
     ],
+
+    "Pent": ["Waist", "Hip", "Cross", "Pant Length", "Thigh", "Bottom"],
     "Waist Coat": ["Waist Coat Length", "Chest", "Neck"],
   };
 
@@ -146,7 +150,7 @@ class _EditCustomerSizesPageState extends State<EditCustomerSizesPage> {
             crossAxisAlignment: pw.CrossAxisAlignment.start,
             children: [
               pw.Text(
-                '${widget.customerName} - $selectedCategory Sizes',
+                '${widget.customerName} ${widget.customerPhone}- $selectedCategory Sizes',
                 style: pw.TextStyle(
                   fontSize: 24,
                   fontWeight: pw.FontWeight.bold,
@@ -193,7 +197,7 @@ class _EditCustomerSizesPageState extends State<EditCustomerSizesPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('${widget.customerName} - Sizes'),
+        title: Text('${widget.customerName} (${widget.customerPhone}) - Sizes'),
         actions: [
           IconButton(
             icon: const Icon(Icons.print),
@@ -202,6 +206,7 @@ class _EditCustomerSizesPageState extends State<EditCustomerSizesPage> {
           ),
         ],
       ),
+
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
